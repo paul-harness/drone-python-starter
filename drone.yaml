@@ -13,10 +13,10 @@ steps:
       from_secret: u_docker
     password: 
       from_secret: p_docker
-    repo: luisredda/drone-python-starter
+    repo: paul-harness/drone-python-starter
     auto_tag: true
 - name: my custom plugin
-  image: luisredda/drone-simple-plugin
+  image: psuholet/drone-simple-plugin
   settings:
     action: deploy
     project: myproject
