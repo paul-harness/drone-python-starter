@@ -47,4 +47,4 @@ steps:
     from: paul.suholet@harness.io
     recipients: [ paul.suholet@harness.io, psuholet@gmail.com ]
   when:
-    status: [ changed, failure ]
+    status: [ success, changed, failure ]
