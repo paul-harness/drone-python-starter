@@ -41,6 +41,7 @@ steps:
   image: drillster/drone-email
   settings:
     host: ivoss.com
+    skip_verify: true
     username: harness@ivoss.com
     password:
       from_secret: alex_smtp_pw
