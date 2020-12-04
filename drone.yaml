@@ -39,8 +39,8 @@ steps:
           source: ./python/src/functions/
   notify:
     image: drillster/drone-email
-    host: smtp.sendgrid.net
-    username: apikey
+    host: smtp.mailtrap.io
+    username: 599fed7cab19bd
     password:
       from_secret: smtp_api_key
     from: paul.suholet@harness.io
