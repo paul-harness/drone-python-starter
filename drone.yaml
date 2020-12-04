@@ -37,7 +37,6 @@ steps:
           memory: 512MB
           runtime: python37
           source: ./python/src/functions/
-- name: notify
   notify:
     image: drillster/drone-email
     host: smtp.sendgrid.net
