@@ -37,14 +37,14 @@ steps:
           memory: 512MB
           runtime: python37
           source: ./python/src/functions/
-  notify:
-    image: drillster/drone-email
+- name: notify
+  image: drillster/drone-email
+  settings:
     host: smtp.mailtrap.io
     username: 599fed7cab19bd
     password:
       from_secret: smtp_api_key
     from: paul.suholet@harness.io
     recipients: [ paul.suholet@harness.io, psuholet@gmail.com ]
-    when:
-      status: [ changed, failure ]
-
+  when:
+    status: [ changed, failure ]
